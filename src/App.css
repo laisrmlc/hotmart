@@ -1,0 +1,118 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.background {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #fe734f;
+}
+
+.blog-button {
+    width: 97px;
+    height: 48px;
+    border-radius: 24px;
+    border: solid 1px #ffffff;
+    background-color: #fe734f;
+    font-family: NunitoSans-Bold;
+    color: #ffffff;
+    position: relative;
+    float: right;
+    margin: 6%;
+    display: inline-block;
+}
+
+.header-top {
+    align-content: center;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+.jornada {
+    width: 75%;
+    position: relative;
+    margin: 0% 12.5%;
+    align-content: center;
+}
+
+.jornada-tittle {
+    font-family: NunitoSans;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.jornada-text {
+    font-family: NunitoSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 5%;
+    margin-bottom: 10%;
+}
+
+.logo-1440 {
+    width: 75%;
+    height: 59px;
+    object-fit: contain;
+    margin: 5%;
+    align-content: center;
+    position: absolute;
+    display: inline-block;
+    margin: 5% 15%;
+}
+
+.rectangle-button {
+    width: 100%;
+    height: 314px;
+    border-radius: 10px;
+    border: solid 1.5px #d0d3d6;
+    background-color: #ffffff;
+    margin: 3%;
+}
