@@ -55,6 +55,17 @@
     display: inline-block;
 }
 
+.button-icon {
+    position: relative;
+    margin: 10px;
+}
+
+.button-icon-div {
+    border-radius: 50%;
+    border: solid 1.5px #d0d3d6;
+    background-color: #ffffff;
+}
+
 .header-top {
     align-content: center;
 }

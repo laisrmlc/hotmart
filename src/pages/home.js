@@ -6,9 +6,37 @@ import logo from '../images/logo-branca.png';
 import pc from '../images/imagem-jornada.png';
 import RectangleButton from '../components/rectangleButton';
 import { Row, Col, Container } from 'react-bootstrap';
+import icon02 from '../images/icon-02.png';
+import icon03 from '../images/icon-03.png';
+import icon04 from '../images/icon-04.png';
+import icon05 from '../images/icon-05.png';
+import icon06 from '../images/icon-06.png';
+import icon07 from '../images/icon-07.png';
+import { createHashHistory } from 'history'
+
+export const history = createHashHistory()
 
 class Home extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    };
+    
+    handleClick(event) {
+        const id = event.target.id
+        console.log(id)
+        if (id == 1) {
+            this.props.history.push('about')
+        }
+        else {
+            console.log("NÃAAO")
+        }
+    }
+
     render() {
+        
+
         return (
             <div className="home">
                 <div className="background">
@@ -26,14 +54,33 @@ class Home extends React.Component {
                 </div>
                 <Container>
                     <Row md={12} >
-                        <Col md={4}><RectangleButton name="O que é e como funciona a Hotmart" /></Col>
-                        <Col md={4}><RectangleButton name="Escolha nicho de criação do produto" /></Col>
-                        <Col md={4}><RectangleButton name="Afiliados" /></Col>
+                        <Col md={4} id={1} onClick={this.handleClick}>
+                            <RectangleButton
+                                name="O que é e como funciona a Hotmart"
+                                id={1}
+                                text="Bla bla"
+                                image={icon02}
+                                description="ble ble" />
+                        </Col>
+                        <Col md={4}>
+                            <RectangleButton
+                                name="Escolha nicho de criação do produto"
+                                text="Bla bla"
+                                id={2}
+                                image={icon03}
+                                description="ble ble"/>
+                        </Col>
+                        <Col md={4}>
+                            <RectangleButton
+                                name="Afiliados"
+                                text="Bla bla"
+                                id={3}
+                                image={icon04}
+                                description="ble ble"/>
+                        </Col>
                     </Row>
                     <Row md={12} >
-                        <Col md={4}><RectangleButton name="O que é e como funciona a Hotmart" /></Col>
-                        <Col md={4}><RectangleButton name="Escolha nicho de criação do produto" /></Col>
-                        <Col md={4}><RectangleButton name="Afiliados" /></Col>
+                        bla
                     </Row>
                 </Container>
             </div>

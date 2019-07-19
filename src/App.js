@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/home.js';
+import Main from './pages/main';
 
-function App() {
-    return (
-        <Home className="home" />
-    );
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <Main />
+            </div>
+        );
+    }
 }
 
 export default App;
